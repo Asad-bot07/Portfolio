@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartify</title>
+  <link rel="stylesheet" href="/output.css">
+</head>
+<body class="scroll-smooth bg-gradient-to-tr from-purple-800 to-red-600 min-h-screen">
+  
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/30 min-h-[70px] sm:min-h-[60px] backdrop-blur-sm border-b z-50 border-white/20 flex items-center justify-between px-4">
+    <div class="font-michroma text-2xl font-semibold text-white">
+      <!-- <h1 id="Name">Asad Hussain</h1> -->
+    </div>
+    <div id="menu" class="cursor-pointer">
+      <img src="/Portfolio/Assets/menu.png" alt="Menu" class="w-6 h-6">
+    </div>
+  </nav>
+
+  <!-- Animated Menu -->
+<div id="info" class="hidden">
+  <div class="fixed top-19 sm:top-16 w-full sm:min-w-[600px] backdrop-blur-md bg-black/40 text-white p-4 flex justify-evenly z-50 transition-all duration-300 ease-in-out opacity-0 scale-95 rounded-2xl">
+    <span class="cursor-pointer"><a href="#About">About</a></span>
+    <span class="cursor-pointer"><a href="#Projects">Projects</a></span>
+    <span class="cursor-pointer"><a href="#Skills">Skills</a></span>
+    <span class="cursor-pointer"><a href="#Education">Education</a></span>
+    <span class="cursor-pointer"><a href="#Contact">Contact</a></span>
+  </div>
+</div>
+
+<!-- Photo of mine -->
+ <div class="flex justify-center items-center">
+    <div id="photo" class="relative top-20  size-50 sm:size-70 mt-10 mb-10">
+      <img src="/Portfolio/Assets/pfp.JPG" alt="" class="rounded-full shadow-black shadow-2xl transition-all ease-in-out duration-300 delay-75 hover:-translate-y-5 hover:scale-110 hover:ring-2 ring-white">
+    </div>
+ </div>
+ <!-- SVG names -->
+ <div class="flex justify-center mt-18">
+  <img
+    src="https://readme-typing-svg.herokuapp.com?font=Michroma&pause=1000&color=F7F7F7&center=true&vCenter=true&random=true&width=435&lines=Welcome;Hey+%F0%9F%91%8B%F0%9F%8F%BB!+I+am+Asad+Hussain;+I+love+building+"
+    alt="Typing Animation"
+    class="w-auto h-auto"
+  />
+</div>
+  <!-- About Section -->
+   <section id="About">
+     <h1 class="mt-20 text-3xl text-center font-press text-white animate-bounce duration-200">About Me</h1>
+      <div class="backdrop-blur-md bg-white/20 m-1.5 p-3 rounded-2xl">
+          <p class="sm:text-xl text-sm font-semibold font-michroma">Hey folks! I’m Asad Hussain, currently pursuing my Bachelor of Computer Applications at IEM Kolkata.
+I'm passionate about using technology to build creative and impactful digital solutions.I have hands-on experience with C, C++, and Java, along with a strong foundation in Data Structures and Algorithms. I’m a logical thinker who thrives on continuous learning, growth, and taking on real-world challenges. Always excited to explore opportunities where I can make a meaningful impact through tech.
+let's connect and build something bigger 🚀 and together🫂</p>
+      </div>
+   </section>
+<!-- Projects -->
+   <section id="Projects">
+  <h1 class="font-press text-center mt-10 text-2xl text-white animate-bounce duration-300">Mini Projects</h1>
+  <hr class="mt-5 border-2 blur border-white">
+  <div class="mt-5 flex flex-col md:flex-row justify-center items-center gap-4 px-4">
+    <h1 class="text-2xl font-press text-white mt-6 animate-pulse">ToDo list</h1>
+    <div class="flex flex-col items-center text-center w-full md:w-1/2 bg-white/40 p-4 rounded-2xl shadow-2xl shadow-black">
+      <a href="https://github.com/Asad-bot07/To-Do-List">
+        <img src="/Portfolio/Assets/desktop.gif" alt="To-Do List" class="w-full h-auto mb-4 rounded-2xl">
+        <p class="text-white bg-black/40 p-2 rounded-2xl">
+          A simple and responsive To-Do List web app built with HTML, Tailwind CSS, and JavaScript. Users can add tasks, view them in a styled list, and manage their daily goals interactively.
+        </p>
+      </a>
+    </div>
+    <h1 class="text-2xl font-press text-white mt-6 animate-pulse">Water-Task</h1>
+    <div class="flex flex-col items-center text-center w-full md:w-1/2 bg-white/40 p-4 rounded-2xl shadow-2xl shadow-black">
+      <a href="https://github.com/Asad-bot07/Water-Tasks">
+        <img src="/Portfolio/Assets/waterTasks.gif" alt="Water Tasks" class="w-full h-auto mb-4 rounded-2xl">
+        <p class="text-white bg-black/40 p-2 rounded-2xl">
+          Water Tasks is a lightweight, responsive task management web app that visualizes tasks as seeds to be nurtured. Users can create, view, and mark tasks as completed with intuitive UI interactions. It uses localStorage and is built with HTML, Tailwind CSS, and JavaScript.
+        </p>
+      </a>
+    </div>
+    <h1 class="text-2xl font-press text-white mt-6 animate-pulse">Weather-App</h1>
+    <div class="flex flex-col items-center text-center w-full md:w-1/2 bg-white/40 p-4 rounded-2xl shadow-2xl shadow-black">
+      <a href="https://github.com/Asad-bot07/Weather-App">
+        <img src="/Portfolio/Assets/DarkPreview.gif" alt="Water Tasks" class="w-full h-auto sm:h-[400px] mb-4 rounded-2xl">
+        <p class="text-white bg-black/40 p-2 rounded-2xl">
+🌦️ A mobile-only responsive weather dashboard built with vanilla JavaScript and Tailwind CSS. It fetches real-time weather data using the OpenWeatherMap API and supports light/dark theme toggling, local time display, and persistent city cards via localStorage.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="Education">
+  <div>
+    <div></div>
+  </div>
+</section>
+
+  <!-- Script for Animation -->
+  <script>
+  const menuBtn = document.getElementById('menu');
+  const infoContainer = document.getElementById('info');
+  const infoPanel = infoContainer.querySelector('div');
+
+  let isOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    if (!isOpen) {
+      // Show menu
+      infoContainer.classList.remove('hidden');
+      setTimeout(() => {
+        infoPanel.classList.remove('opacity-0', 'scale-95', 'translate-y-[-10px]');
+        infoPanel.classList.add('opacity-100', 'scale-100', 'translate-y-0');
+      }, 10);
+    } else {
+      // Hide menu
+      infoPanel.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
+      infoPanel.classList.add('opacity-0', 'scale-95', 'translate-y-[-10px]');
+      setTimeout(() => {
+        infoContainer.classList.add('hidden');
+      }, 300); // matches Tailwind duration-300
+    }
+
+    isOpen = !isOpen; // Toggle state
+  });
+</script>
+</body>
+</html>
