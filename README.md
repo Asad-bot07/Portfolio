@@ -4,7 +4,7 @@ A clean and responsive personal portfolio built using **HTML**, **Tailwind CSS**
 
 This project highlights my **projects**, **skills**, and **resume** with a mobile-first approach and subtle animations for a modern touch.
 
-> ⚠️ Still a work in progress – not yet fully optimized for desktop screens.
+> Fully optimized for desktop screens.
 
 ## 🔗 Live Site
 
